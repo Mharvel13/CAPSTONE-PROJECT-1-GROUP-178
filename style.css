@@ -1,0 +1,468 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    overflow-x: hidden;
+}
+header{
+    background-color: hsl(217, 28%, 15%);
+
+}
+/* Navigation Styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo img{
+    width: 100px;
+    margin: 30px;
+}
+nav .navbar ul{
+    margin: 10px;
+    padding: 10px;
+
+}
+
+nav .navbar ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav .navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+nav .navbar ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Showcase Styles */
+main.showcase{
+    background-image: url("/images/bg-curvy-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(217, 28%, 15%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+main.showcase .showcase-img img{
+    width: 100%;
+    margin: 0 auto 100px auto;
+}
+
+main.showcase .showcase-text{
+    text-align: center;
+}
+main.showcase .showcase-text h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+main.showcase .showcase-text p{
+    font-size: 0.8rem;
+    padding: 20px;
+    line-height: 20px;
+}
+
+.showcase a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color:white;
+    padding:20px 80px;
+    background-color:   hsl(198, 60%, 50%);
+    margin: 20px 50px; 
+    border-radius: 50px;
+    
+}
+.showcase a:hover{
+    background-color:hsl(176, 68%, 64%);
+
+}
+
+/* Features Styles */
+.features-grid-container{
+    max-width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+}
+
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.feature-box h3{
+    font-family: 'Raleway', sans-serif;
+}
+.feature-box p{
+    font-size: 0.8rem;
+}
+
+  /* Productive-section styles*/
+
+
+.productive-flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.productive-img{
+    width: 50%;
+    margin-right: 20px;
+
+}
+.productive-img img{
+    width: 100%;
+    margin: 10px;
+}
+
+.productive-text{
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.productive-text h1{
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0;
+    font-size: 2rem;
+
+}
+.productive-text p{
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+.productive-text a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color:hsl(198, 60%, 50%);
+    border-bottom: 1px solid hsl(198, 60%, 50%);
+    line-height: 20px;
+    padding-bottom: 3px;
+
+}
+.productive-text a:hover{
+   color: white;
+   border-color: white;
+
+}
+
+/* Testimonial Styles */
+
+.testimonail-flex-container{
+    display:flex;
+    
+}
+.testimonial{
+    width: 80%;
+    margin: 200px auto 50px auto;
+     
+}
+
+.testimonial-box{
+    background-color:  hsl(219, 30%, 18%);
+    padding: 30px;
+    width: 30%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    box-shadow: 5px 5px 2px rgb(51, 49, 49);
+
+}
+
+.testimonial-text{
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.quote{
+    position:relative;
+    top: 25px;
+    left: 5px;
+    z-index: -2;
+
+
+}
+.testimonial-person{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.testimonial-person-img{
+    margin-right: 10px;
+
+}
+
+.testimonial-person-img img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.testimonial-person-details p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.testimonial-person-details p.person-name{
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+
+
+/* Sign up styles */
+section.sign-up{
+    background-color: hsl(217, 28%, 15%);
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    top: 125px;
+}
+
+section.sign-up h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+    
+}
+
+section.sign-up p{
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 20px;
+    padding: 30px;
+}
+
+form{
+    display: flex;
+}
+
+input[type=email]{
+    padding: 15px;
+    border-radius: 25px;
+    width: 60%;
+    margin-left:20px;
+
+}
+
+input[type=button]{
+    padding: 15px;
+    border-radius: 25px;
+    width: 30%;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: hsl(198, 60%, 50%);
+    margin-left:20px;
+    font-size: 12px;
+}
+
+input[type=button]:hover{
+    background-color: hsl(176, 68%, 64%);
+}
+
+
+/* Footer Styles */
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 200px 20px 100px 20px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.location{
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.location img{
+    align-self: start;
+}
+.location p{
+    margin: 0 0 0 10px;
+}
+
+.footer-contact{
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.phone, .mail{
+    align-self: start;
+    flex: 1;
+    display: flex;
+    align-items: center;  
+
+}
+
+.phone p, .mail p{
+    margin-left: 10px;
+}
+
+.footer-pages-links, .footer-pages-links2{
+    flex: 1;
+    align-self: start;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.footer-pages-links p, .footer-pages-links2 p{ 
+    flex: 1;
+    margin: 0;
+    padding: 3px;
+}
+
+.footer-social-media-links{
+    width: 100px;
+    align-self: start;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.footer-social-media-links i{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* For mobile devices */
+@media(max-width:750px){
+  /* Navigation mobile device styles */
+    nav .logo img{
+        margin: 20px;
+    }
+    nav .navbar ul{
+        margin: 0px;
+        padding: 0px;
+    
+    }
+    nav .navbar ul li a{
+        font-size: 0.6rem;
+        margin: 5px;
+    }
+    
+
+    /* Showcase section mobile device styles */
+    main.showcase .showcase-text h1{
+        font-size: 1.4rem;
+    }
+    .showcase a{
+        padding:10px 80px;
+        
+    }
+    /*  Features-section mobile device styles */
+
+    .grid-container{
+        grid-template-columns: 1fr;
+     
+    } 
+
+    .feature-box{   
+        margin: 20px auto;
+        width: 85%;
+
+    }
+
+  /* Productive-section mobile device styles */
+    .productive-flex-container{
+       flex-direction: column;
+    }   
+    .productive-img{
+        width: 100%;
+    
+    }
+    .productive-img img{
+        width: 100%;
+    }
+    .productive-text{
+        width: 100%;
+        text-align: left;
+    }
+
+
+    /* Testimonial mobile device styles */
+    .testimonail-flex-container{
+        flex-direction: column;
+        
+    }
+
+    .testimonial-box{
+        width: 100%;
+        margin: 20px;
+    }
+
+    /* Sign Up mobile device styles */
+    section.sign-up{
+        width: 90%;
+        
+    }
+    form{
+        flex-direction: column;
+    }
+    input[type=email], input[type=button]{
+        width: 100%;
+        margin: 10px;   
+    
+    }
+
+      /* Footer mobile device styles */
+    .footer-container{
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start;
+    }
+    
+    
+    .footer-pages-links, .footer-pages-links2{
+        margin-bottom: 30px;
+    }
+
+
+} 
+    
+    
+    

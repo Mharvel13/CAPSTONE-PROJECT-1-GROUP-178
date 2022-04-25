@@ -396,14 +396,14 @@ footer{
     }
     /*  Features-section mobile device styles */
 
-    .grid-container{
+    .features-grid-container{
         grid-template-columns: 1fr;
      
     } 
 
     .feature-box{   
-        margin: 20px auto;
-        width: 85%;
+        margin: 20px 0;
+        width: 100%;
 
     }
 
@@ -420,6 +420,7 @@ footer{
     }
     .productive-text{
         width: 100%;
+        padding: 0;
         text-align: left;
     }
 
@@ -449,7 +450,12 @@ footer{
     
     }
 
+
       /* Footer mobile device styles */
+
+      footer{
+        padding-bottom:0px; 
+      }
     .footer-container{
        flex-direction: column;
        justify-content: flex-start;
@@ -460,7 +466,15 @@ footer{
     .footer-pages-links, .footer-pages-links2{
         margin-bottom: 30px;
     }
-
+    .footer-social-media-links{
+        margin-top: 50px; 
+        justify-self: end;        
+        align-self:center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 
 } 
     

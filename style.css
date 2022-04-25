@@ -433,6 +433,7 @@ footer{
 
     .testimonial-box{
         width: 100%;
+        margin:10px;
     }
 
     /* Sign Up mobile device styles */

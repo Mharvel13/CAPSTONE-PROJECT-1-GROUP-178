@@ -50,7 +50,7 @@ nav .navbar ul li a:hover{
 
 /* Showcase Styles */
 main.showcase{
-    background-image: url("/images/bg-curvy-desktop.svg");
+    background-image: url("images/bg-curvy-desktop.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -387,6 +387,10 @@ footer{
     
 
     /* Showcase section mobile device styles */
+
+    main.showcase{
+        background-image: url("images/bg-curvy-mobile.svg");
+    }
     main.showcase .showcase-text h1{
         font-size: 1.4rem;
     }
@@ -433,7 +437,7 @@ footer{
 
     .testimonial-box{
         width: 100%;
-        margin:10px;
+        margin:10px 0 20px 0;
     }
 
     /* Sign Up mobile device styles */
